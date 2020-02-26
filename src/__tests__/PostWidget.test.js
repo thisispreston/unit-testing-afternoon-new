@@ -27,3 +27,13 @@ it('Shortening display text when expand is false', () => {
   expect(container.textContent)
     .toContain(shortenText(longPost.text))
 })
+
+it('Display all text when expand is true', () => {
+  const { container } = render (
+    <MemoryRouter>
+      <PostWidget expanded={true} {...longPost} />
+    </MemoryRouter>
+  )
+  expect(container.textContent)
+    .toContain(longPost.text)
+})
