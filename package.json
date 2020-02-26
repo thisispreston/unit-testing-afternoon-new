@@ -48,5 +48,5 @@
     "watchPathIgnorePatterns": [
       "<rootDir>/src/__tests__/__data__"
     ]
-  },
+  }
 }
